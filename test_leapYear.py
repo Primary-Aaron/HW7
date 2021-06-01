@@ -10,3 +10,7 @@ class test_(unittest.TestCase):
     year = leapYear.isLeapYear(200)
     #message = "this ain't it, chief"
     self.assertEqual(year, False)
+  def test_400(self):
+    year = leapYear.isLeapYear(800)
+    #message = "this ain't it, chief"
+    self.assertEqual(year, True)
